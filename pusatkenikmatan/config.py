@@ -40,24 +40,24 @@ DB_URI = os.environ.get("DATABASE_URL", "postgres://qwxnspmc:gpIhqtzuu5XDwSUx5Gt
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001802149134"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1002123452617"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 # Pesan Awalan /start
 START_MSG = os.environ.get(
     "START_MESSAGE",
-    "<b>Hello {first}</b>\n\n<b>Saya dapat menyimpan file pribadi di Channel Tertentu dan pengguna lain dapat mengaksesnya dari link khusus.</b>\n\n<b>nonton video :\n- tanpa link\n- tanpa bot\n- garansi sampai tobat\ncuma dengan 50k kamu bisa nikmatin all video all genre\nPC ke @etmindoangkak</b>",
+    "<b>Hello {first}</b>\n\n<b>Saya dapat menyimpan file pribadi di Channel Tertentu dan pengguna lain dapat mengaksesnya dari link khusus.</b>\n\n<b>nonton video :\n- tanpa link\n- tanpa bot\n- garansi sampai tobat\ncuma dengan 50k kamu bisa nikmatin all video all genre\nPC ke @nocturnalonebeing</b>",
 )
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "2024030789").split())]
 except ValueError:
     raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
 
 # Pesan Saat Memaksa Subscribe
 FORCE_MSG = os.environ.get(
     "FORCE_SUB_MESSAGE",
-    "<b>Hello {first}\n\nAnda harus bergabung di Channel/Grup saya Terlebih dahulu untuk Melihat File yang saya Bagikan\n\nSilakan Join Ke Channel & Group Terlebih Dahulu</b>\n\n<b>nonton video :\n- tanpa link\n- tanpa bot\n- garansi sampai tobat\ncuma dengan 50k kamu bisa nikmatin all video all genre\nPC ke @etmindoangkak</b>",
+    "<b>Hello {first}\n\nAnda harus bergabung di Channel/Grup saya Terlebih dahulu untuk Melihat File yang saya Bagikan\n\nSilakan Join Ke Channel & Group Terlebih Dahulu</b>\n\n<b>nonton video :\n- tanpa link\n- tanpa bot\n- garansi sampai tobat\ncuma dengan 50k kamu bisa nikmatin all video all genre\nPC ke @nocturnalonebeing</b>",
 )
 
 # Atur Teks Kustom Anda di sini, Simpan (None) untuk Menonaktifkan Teks Kustom
